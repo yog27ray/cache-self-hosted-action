@@ -1,0 +1,16 @@
+name: cache-self-hosted-action
+on: [push]
+
+jobs:
+  test_cache_build:
+    runs-on: self-hosted
+    name: Test Cache Action
+    steps:
+      - name: Cache Primes
+        id: cache-primes
+        uses: yog27ray/cache-self-hosted-action@v0.0.1
+        with:
+          path: prime-numbers
+          key: ${{ runner.os }}-primes
+      - name: Generate Prime Numbers
+        run: ls
