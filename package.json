@@ -1,6 +1,6 @@
 {
   "name": "cache-self-hosted-action",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A Github Action allows caching dependencies and build outputs to improve workflow execution time.",
   "main": "index.js",
   "dependencies": {
